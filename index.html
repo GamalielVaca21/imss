@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Formulario IMSS</title>
+</head>
+<body>
+    <h1>Formulario IMSS</h1>
+    <form class="declara" id="contact_form" action="#">
+        <ul>
+            <li>
+                <span class="required notification">*Agregue sus datos</span>
+            </li>
+            <li>
+                <label for="rfc">Número de derechohabiente</label>
+                <input type="text" name="rfc" pattern="[A-Za-z].{10m}" placeholder="11 caracteres (números o letras)." maxlength="11" required>
+            </li>
+            <li>
+                <label for="name">Nombre: </label>
+                <input type="text" name="name" placeholder="15 caracteres" maxlength="15" required>
+            </li>
+            <li>
+                <label for="lastname">Apellidos: </label>
+                <input type="text" name="lastname" placeholder="20 caracteres" maxlength="20" required>
+            </li>
+            <li>
+                <label for="blood">Tipo de sangre:</label>
+                <select name="blood" required>
+                    <option value="">Opción</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </li>
+            <li>
+                <label for="edad">Edad: </label>
+                <input type="text" name="edad" placeholder="00" maxlength="2" required>
+            </li>
+            <li>
+                <label for="especialidad">Especialidad: </label>
+                <input type="text" name="especialidad" placeholder="50 caracteres" maxlength="50" required>
+            </li>
+            <li>
+                <label for="tel">Número de teléfono: </label>
+                <input type="text" name="tel" placeholder="123-456-7890" maxlength="12" required>
+            </li>
+            <li>
+                <label for="clave">Clave IADA</label>
+                <input type="text" name="clave" placeholder="123" maxlength="3" required>
+            </li>
+            <li>
+                <button class="button">Enviar</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
